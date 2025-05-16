@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #191919;
+  color: #fff;
+  overflow: auto; /* hidden*/
+}
+
+/* ##### Navigation Bar ###### */
+
+nav {
+  background-color:#111010;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+nav a {
+  margin: 0 80px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #5a36f9;
+  cursor: pointer;
+}
+
+/* ##### Buttons ###### */
+
+.resume-button, .github-button, .linkedin-button {
+  background-color: #2a2929;
+  border: 2px solid #5a36f9;
+  color: #5a36f9;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+  margin-top: 100px;
+}
+
+.resume-button:hover, .github-button:hover, .linkedin-button:hover { 
+  background-color: #5a36f9;
+  color: white;
+}
+
+.resume-button:active, .github-button:active, .linkedin-button:active {
+  opacity: 0.7;
+}
+
+.resume-button {
+  padding: 30px 50px;
+  margin-left: 655px;
+}
+
+.github-button { 
+  padding: 25px 40px;
+  margin-left: 620px;
+}
+
+
+.linkedin-button {
+  padding: 25px 40px;
+  margin-left: 655px;
+}
+
+
+/* ##### Headers ###### */
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.header {
+  position: relative;
+  margin-left: 300px;
+  margin-bottom: 50px;
+}
+
+.header h1, .header h2 {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #5a36f9;
+}
+.header h1 {
+  display: inline-block;
+  font-size: 3rem;
+  animation: typing 1.5s steps(20, end) forwards, hideCursor 0s 1.2s forwards;
+}
+
+.header h2 {
+  font-size: 2rem;
+  margin-top: 10px;
+  opacity: 0;
+  animation: typing2 1.5s steps(20, end) 1.5s forwards, fadeIn 0s 1.5s forwards, hideCursor 0s 3s forwards;
+}
+
+.header_img {
+  position: absolute;
+  border-radius: 5px;
+  top: -150px;
+  left: 100%; 
+  margin-left: 160px;
+  width: 400px; 
+  height: auto;
+  opacity: 0;
+  animation: fadeIn 1s ease-in 3s forwards; /* Image fades in after typing */
+}
+
+.skill-header {
+  font-size: 3rem;
+  background-color:#6f53ec;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+/* ##### Text ###### */
+
+.text, .portfolio-text, .portfolio-project-text {
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #fff;
+}
+
+.text {
+  font-size: 1.3rem;
+}
+
+.vik-text {
+  color: #5a36f9;
+}
+
+.portfolio-text{
+  font-size: 1.13rem;
+}
+
+.portfolio-project-text {
+  font-size: 1.13rem;
+  font-weight: bold;
+  color: gold;
+}
+
+.text strong, .portfolio-text strong {
+  font-weight: bold;
+  color: #5a36f9;  /* Highlight important text with a different color */
+}
+
+/* ##### Boxes ###### */
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 20px;
+  margin-top: 130px;
+  margin-bottom: 20px;
+  gap: 100px;
+}
+
+.box, .box-flute, .box-service { 
+  width: 600px;
+  height: auto;
+  background-color: #222222;
+  border: 2px solid #5a36f9;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.box-flute {
+  margin-top: 100px;
+  margin-left: 425px;
+}
+
+.box-image {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  border-radius: 10px; 
+}
+
+.box-project {
+  background-color: #222222;
+  border-radius: 10px;
+  width: 340px;
+  height: 825px;
+  border: 2px solid #5a36f9;
+  padding: 20px;
+  flex-wrap: nowrap;
+  margin-left: 10px;
+}
+.box-project-image, .box-project-image-other {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-bottom: 25px;
+}
+
+.box-project-image-other{
+  width: 100%;
+  margin-left: 0;
+}
+
+.horizontal-box {
+  width: 800px;
+  height: auto;
+  border: 2px solid #5a36f9;
+  border-radius: 10px;
+  background-color: #222222;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+/* ##### Keyframes ###### */
+
+@keyframes typing {
+  from { 
+    width: 0; 
+  }
+  to { 
+    width: 100%; 
+  }
+}
+
+@keyframes typing2 {
+  from { 
+    width: 0; 
+  }
+  to { 
+    width: 100%; 
+  }
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+  }
+  to { 
+    opacity: 1; 
+  }
+}
+
+@keyframes hideCursor {
+  to { 
+    border-right: none; 
+  } 
+}

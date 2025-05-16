@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link id="mainStyleSheet" rel="stylesheet" href="styles/styles_1.css">
+        <script defer src="style_switch.js"></script>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Skills</a>
+            <a href="qualifications.html">Qualifications</a>
+            <a href="service.html">Service</a>
+            <a id="style-toggle" onclick="toggleStyleSheet()">Switch Style</a>
+        </nav>
+        <p class="skill-header"><strong>Projects and Skills</strong></p>
+        <a href="https://github.com/vikrum96" target="_blank"><button class="github-button"><p class="portfolio-project-text">Github Portfolio</p></button></a>
+        <div class="box-container">
+            <div class="box-project">
+                <p class="portfolio-project-text"><span style="margin-left: 45px;">MNIST Digit Classifier</span></p>
+                <img src="images/mnist_digit_classifier.png" class="box-project-image">
+                <p class="portfolio-text">
+                * Developed a handwritten <strong>digit classification</strong> system using the <strong>
+                    <a href="https://www.kaggle.com/datasets/hojjatk/mnist-dataset">
+                        MNIST data set</a> </strong>, 
+                achieving an accuracy of 87.2%.
+                </p>
+                <p class="portfolio-text">
+                * Implemented a <strong>neural network</strong> from scratch in Python and NumPy, utilizing the <strong>ReLU</strong> and 
+                <strong>softmax</strong> activation functions, <strong>backpropagation</strong>, and <strong>gradient descent</strong> for 
+                weight optimization.
+                </p>
+                <p class="portfolio-text">
+                * Enhanced the model's performance through <strong>hyperparameter tuning</strong> and implemented <strong>He weight
+                initialization</strong> for improved convergence and training efficiency.            
+                </p>
+            </div>
+            <div class="box-project">
+                <p class="portfolio-project-text">Spades Hand Scorer and Detector</p>
+                <img src="images/spades_hand_score.png" class="box-project-image-other">
+                <p class="portfolio-text">
+                    * Utilizes Python and a pre-trained <strong>YOLOv4</strong> model fine-tuned on a custom dataset of playing cards to 
+                    detect the rank (e.g., Ace, 2, King) and suit (e.g., Spades, Hearts, Clubs, Diamonds) of cards.
+                </p>
+                <p class="portfolio-text">
+                    * The rating for a hand is based on the card game <a href="https://bicyclecards.com/how-to-play/spades/"><strong>'Spades'</strong></a> 
+                    and is calculated based on factors like card combinations, suit distribution, and rank patterns. 
+                    Higher ratings are given to stronger hands such as 'Spades' flushes or high-ranked cards, with calculations considering 
+                    both individual card strength and overall hand synergy.
+                </p>
+                <p class="portfolio-text">
+                    * The model achieves an average <strong>accuracy of 93%</strong> in detecting card ranks and suits, with a 
+                    low processing time for the rating.
+                </p>
+            </div>
+            <div class="box-project">
+                <p class="portfolio-project-text"><span style="margin-left: 25px;">Connect 4 With AI Opponent</span></p>
+                <img src="images/python_connect4.png" class="box-project-image-other">
+                <p class="portfolio-text">
+                    * Developed a Connect 4 game in Python using Pygame, featuring both Player vs. Player and Player vs. AI modes 
+                    with an interactive graphical user interface.
+                </p>
+                <p class="portfolio-text">
+                    * Implemented an AI opponent using the 
+                    <a href="https://cs.stanford.edu/people/eroberts/courses/soco/projects/2003-04/intelligent-search/minimax.html" target="_blank">
+                    <strong>Minimax algorithm</strong></a> with
+                    <a href="https://www.javatpoint.com/ai-alpha-beta-pruning" target="_blank"><strong> alpha-beta pruning</strong></a>
+                    to evaluate and select optimal moves.
+                </p>
+                <p class="portfolio-text">
+                    * Designed and optimized board evaluation functions to score potential moves, enhancing the AI's decision-making 
+                    process based on <strong>heuristic evaluation</strong> of the game state.
+                </p>
+            </div>
+            <div class="box-project">
+                <p class="portfolio-project-text"><span style="margin-left: 110px;">Chess</span></p>
+                <img src="images/chess_python.png" class="box-project-image-other">
+                <p class="portfolio-text">
+                    * Developed a fully functional Chess game in Python using Pygame, incorporating <strong>drag-and-drop </strong>
+                    functionality for piece movement and enhanced user interaction.
+                </p>
+                <p class="portfolio-text">
+                    * Integrated external chess art assets to create a better visual experience, 
+                    ensuring a polished and visually appealing gameplay environment.
+                </p>
+                <p class="portfolio-text">
+                    * Implemented chess algorithms to simulate game rules, piece movement, and logic, 
+                    allowing for a higher level of player-controlled scenarios.
+                </p>
+            </div>
+            <div class="box-project">
+                <p class="portfolio-project-text"><span style="margin-left: 95px;">Flappy Bird</span></p>
+                <img src="images/unity_flappy_bird.png" class="box-project-image-other">
+                <p class="portfolio-text">
+                    * Created a fully functional Flappy Bird clone using Unity and C#, incorporating smooth animations and 
+                    intuitive controls.
+                </p>
+                <p class="portfolio-text">
+                    * Implemented game mechanics such as <strong>collision detection</strong>, score tracking, and procedural <strong>level
+                    generation.</strong> 
+                </p>
+                <p class="portfolio-text">
+                    * Designed and integrated custom assets, including sprites and sound effects, to enhance 
+                    the overall user interface and feel of the game.
+                </p>
+            </div>
+            <div class="horizontal-box">
+                <p class="text">
+                    Through my projects, I showcase a variety of endeavors that highlight my skills in artificial intelligence, game development, 
+                    and machine learning. Each project reflects my approach to problem-solving, whether it's building 
+                    neural networks or integrating AI into games like Connect 4. As I continue to explore new 
+                    technologies, I remain focused on creating innovative solutions that merge practical applications with 
+                    engaging user experiences.</p>
+                <p class="text">
+                     Beyond that, I also delve into various research articles on machine learning and find
+                     <a href="https://www.sciencedirect.com/science/article/pii/S1877050920308218this" target="_blank"> this one</a>
+                     to be quite fascinating.
+                </p>
+            </div>
+            
+        </div>
+    </body>
+</html>
